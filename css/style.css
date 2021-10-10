@@ -105,12 +105,6 @@ a {
 /* ************ */
 /* ICONS */
 /* ************ */
-.icon {
-    width: 20px;
-    height: 20px;
-    transition: fill 0.3s ease-in;
-}
-
 .icon-container {
     display: flex;
     justify-content: center;
@@ -120,6 +114,16 @@ a {
     width: 40px;
     height: 40px;
     transition: border 0.3s ease-in;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    transition: fill 0.3s ease-in;
+}
+.icon--small {
+    width: 15px;
+    height: 15px;
 }
 
 .icon--primary {
@@ -206,7 +210,7 @@ a {
 /* CARD */
 /* ************ */
 .card {
-    padding: 2rem;
+    padding: 3rem 4rem;
     border-radius: 5px;
     box-shadow: 0 0 15px -2px var(--color-background);
 }
@@ -215,7 +219,6 @@ a {
 /* MEDIA */
 /* ************ */
 .media {
-    margin-bottom: 2rem;
     display: flex;
     align-items: center;
 }
@@ -240,6 +243,25 @@ a {
 }
 
 /* ************ */
+/* TESTIMONIAL */
+/* ************ */
+.testimonial {
+    margin: 0 2rem;
+}
+
+.testimonial__quote {
+    margin: 2rem 0;
+    line-height: 1.8;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
+
+/* ************ */
 /* BLOCK */
 /* ************ */
 
@@ -258,161 +280,4 @@ a {
 
 .block__header p {
     opacity: 0.5;
-}
-
-/* ************ */
-/* HERO */
-/* ************ */
-.hero {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%), url('/images/bg-header-mobile.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.hero__logo {
-    display: block;
-    width: 125px;
-    margin: 5rem auto;
-}
-
-@media screen and (min-width: 980px) {
-    .hero {
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%), url('/images/bg-header-desktop.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-
-/* ************** */
-/* BLOCK SHOWCASE */
-/* ************** */
-
-.block-showcase .grid {
-    align-items: center;
-}
-
-.block-showcase__image > img {
-    width: 100%;
-    max-width: 500px;
-}
-
-.block-showcase__body .block__header {
-    max-width: 375px;
-}
-
-@media screen and (min-width: 980px) {
-    .block-showcase .grid {
-        grid-template-columns: 50% minmax(0, 50%);
-        gap: 10rem;
-    }
-
-    .block-showcase__image {
-        justify-self: end;
-    }
-
-    .block-showcase__image > img {
-        width: auto;
-        max-width: 800px;
-    }
-    .block-showcase__body .block__header {
-        text-align: left;
-    }
-}
-
-/* ************** */
-/* BLOCK FEATURES */
-/* ************** */
-.block-features .grid {
-    gap: 1rem;
-}
-
-/* ************** */
-/* BRANDS */
-/* ************** */
-.brands {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 6rem;
-}
-
-.brands img {
-    width: auto;
-}
-
-@media screen and (min-width: 980px) {
-    .brands {
-        flex-direction: row;
-        align-content: space-around;
-        gap: 2rem;
-    }
-    .brands img {
-        transform: scale(0.8);
-    }
-}
-/* ************** */
-/* SOCIAL */
-/* ************** */
-.social .icon {
-    height: 24px;
-    margin: 0 0.5rem;
-    transition: fill 0.2s ease-in;
-}
-
-.social .icon:hover {
-    fill: var(--color-primary);
-}
-
-/* ************** */
-/* FOOTER */
-/* ************** */
-
-.footer {
-    background: var(--color-footer);
-    padding: 3rem 4vw;
-}
-
-.footer .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer__logo img {
-    width: 55px;
-}
-.footer .list {
-    margin: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.footer .list__item {
-    margin: 1.5rem 0;
-}
-
-.block.footer {
-    margin-bottom: 0;
-}
-
-@media screen and (min-width: 968px) {
-    .footer .container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .footer .list {
-        flex-direction: column;
-        text-align: left;
-        flex-wrap: wrap;
-        max-height: 100px;
-        width: 500px;
-    }
-    .footer .list__item {
-        margin-top: 0;
-        margin: 1rem 5rem 1rem 0;
-    }
 }
