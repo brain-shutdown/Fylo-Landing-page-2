@@ -159,9 +159,29 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-    .btn {
-        max-width: 300px;
-    }
+}
+
+/* ************ */
+/* INPUT */
+/* ************ */
+::placeholder {
+    color: var(--color-background);
+}
+
+.input {
+    padding: 1.5rem 2.5rem;
+    width: 100%;
+    outline: 0;
+}
+
+.input--primary {
+    border-radius: 5px;
+    border: 1px solid var(--color-callout);
+}
+
+.input--secondary {
+    border-radius: 5px;
+    border: none;
 }
 
 /* ************ */
