@@ -185,6 +185,15 @@ a {
 }
 
 /* ************ */
+/* CARD */
+/* ************ */
+.card {
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 15px -2px var(--color-background);
+}
+
+/* ************ */
 /* BLOCK */
 /* ************ */
 
