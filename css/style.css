@@ -388,9 +388,12 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0%;
+    padding-top: 5rem;
+}
+
+.block-testimonial .grid {
     align-items: center;
     gap: 4rem;
-    padding-top: 5rem;
 }
 
 .block-testimonial__image {
@@ -421,5 +424,31 @@ a {
 
     .block-testimonial__content {
         align-items: flex-start;
+    }
+}
+
+/* ************ */
+/* CALLOUT */
+/* ************ */
+.callout {
+    background: var(--color-callout);
+    padding: 5rem 2rem;
+}
+
+.callout .block__header {
+    color: #fff;
+}
+
+.callout__input {
+    gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .callout .grid {
+        column-gap: 10rem;
+    }
+
+    .callout__input .btn {
+        width: 50%;
     }
 }
