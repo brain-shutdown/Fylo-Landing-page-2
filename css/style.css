@@ -211,6 +211,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+    .btn {
+        font-size: 1.2rem;
+    }
 }
 
 /* ************ */
@@ -308,6 +311,12 @@ a {
     opacity: 0.8;
 }
 
+@media screen and (min-width: 768px) {
+    .block__header {
+        text-align: left;
+    }
+}
+
 /* ************ */
 /* NAVIGATION */
 /* ************ */
@@ -339,4 +348,36 @@ a {
 
 .nav__item > a:hover {
     color: var(--color-secondary);
+}
+
+/* ************ */
+/* BLOCK HERO */
+/* ************ */
+.block-hero {
+    align-items: center;
+    gap: 4rem;
+}
+
+.block-hero__image {
+    width: 100%;
+}
+
+.block-hero__input {
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .block-hero__image {
+        order: 2;
+    }
+
+    .block-hero__content {
+        padding-right: 4rem;
+    }
+
+    .block-hero__input {
+        padding-right: 2rem;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
 }
