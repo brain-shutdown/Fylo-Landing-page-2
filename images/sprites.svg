@@ -2,19 +2,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <symbol viewBox="0 0 16 16" id="icon-arrow" xmlns="http://www.w3.org/2000/svg" >
         <defs>
-            <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="aa">
-                <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
-                <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-                <feColorMatrix values="0 0 0 0 0.239215686 0 0 0 0 0.62745098 0 0 0 0 0.560784314 0 0 0 0.793506567 0" in="shadowBlurOuter1"/>
-            </filter>
-            <circle id="ab" cx="6" cy="6" r="6" />
+            <circle id="b" cx="6" cy="6" r="6"/>
+
         </defs>
-        <g>
+        <g >
             <g transform="translate(2 2)">
-                <use filter="url(#aa)" xlink:href="#ab"/>
-                <use xlink:href="#ab" />
+                <use filter="url(#a)" xlink:href="#b"/>
+                <use xlink:href="#b"/>
             </g>
-            <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" />
+            <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#FFF"/>
         </g>
     </symbol>
     <symbol viewBox="0 0 20 16" id="icon-email" xmlns="http://www.w3.org/2000/svg">

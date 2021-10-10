@@ -81,26 +81,6 @@ h3 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-/* ************ */
-/* LINKS */
-/* ************ */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* ************ */
-/* LISTS */
-/* ************ */
-/* TODO: Check lists */
-.list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.list__item a:hover {
-    color: var(--color-primary);
-}
 
 /* ************ */
 /* ICONS */
@@ -127,17 +107,71 @@ a {
 }
 
 .icon--primary {
-    fill: var(--color-icons);
+    fill: var(--color-primary);
 }
+
 .icon--secondary {
-    fill: var(--color-body);
+    fill: var(--color-secondary);
+}
+
+.icon--primary:hover {
+    fill: var(--color-primary-hover);
+}
+
+.icon--secondary:hover {
+    fill: var(--color-secondary-hover);
 }
 
 .icon-container:hover .icon {
     fill: var(--color-secondary);
 }
+
 .icon-container:hover {
     border: 1px solid var(--color-secondary);
+}
+
+/* ************ */
+/* LINKS */
+/* ************ */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-secondary);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-secondary);
+    transition: all 0.3s ease-in;
+}
+
+.link__text {
+    margin-right: 1rem;
+}
+
+.link:hover {
+    color: var(--color-secondary-hover);
+    border-bottom: 1px solid var(--color-secondary-hover);
+}
+
+.link:hover .icon {
+    fill: var(--color-secondary-hover);
+    transform: translateX(5px);
+}
+
+/* ************ */
+/* LISTS */
+/* ************ */
+/* TODO: Check lists */
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list__item a:hover {
+    color: var(--color-primary);
 }
 
 /* ************ */
