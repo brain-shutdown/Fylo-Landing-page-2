@@ -105,10 +105,21 @@ a {
 /* ************ */
 /* ICONS */
 /* ************ */
-/* TODO: Check icons */
 .icon {
+    width: 20px;
+    height: 20px;
+    transition: fill 0.3s ease-in;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-callout);
+    border-radius: 50%;
     width: 40px;
     height: 40px;
+    transition: border 0.3s ease-in;
 }
 
 .icon--primary {
@@ -116,6 +127,13 @@ a {
 }
 .icon--secondary {
     fill: var(--color-body);
+}
+
+.icon-container:hover .icon {
+    fill: var(--color-secondary);
+}
+.icon-container:hover {
+    border: 1px solid var(--color-secondary);
 }
 
 /* ************ */
