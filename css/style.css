@@ -164,14 +164,10 @@ a {
 /* ************ */
 /* LISTS */
 /* ************ */
-/* TODO: Check lists */
+
 .list {
     list-style: none;
     padding-left: 0;
-}
-
-.list__item a:hover {
-    color: var(--color-primary);
 }
 
 /* ************ */
@@ -310,4 +306,37 @@ a {
 
 .block__header p {
     opacity: 0.8;
+}
+
+/* ************ */
+/* NAVIGATION */
+/* ************ */
+.nav {
+    padding-top: 1rem;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 80px;
+}
+
+.nav__list {
+    display: flex;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.nav__item {
+    padding-left: 2rem;
+}
+
+.nav__item > a {
+    transition: color 0.3s ease-in;
+}
+
+.nav__item > a:hover {
+    color: var(--color-secondary);
 }
