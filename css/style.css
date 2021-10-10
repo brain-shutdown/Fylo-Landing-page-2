@@ -33,7 +33,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
-    color: var(--color-body);
+    color: var(--color-body-black);
 }
 
 h1,
@@ -49,13 +49,13 @@ h6 {
 }
 
 h1 {
-    font-size: 3rem;
-}
-h2 {
     font-size: 2.5rem;
 }
-h3 {
+h2 {
     font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
 }
 
 /* ************ */
@@ -191,6 +191,34 @@ a {
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 0 15px -2px var(--color-background);
+}
+
+/* ************ */
+/* MEDIA */
+/* ************ */
+.media {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.media__image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.media__body {
+    margin: 0 2rem;
+}
+
+.media__title {
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.media__text {
+    font-size: 1.1rem;
 }
 
 /* ************ */
