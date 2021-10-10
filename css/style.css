@@ -300,18 +300,14 @@ a {
 /* ************ */
 
 .block {
-    --padding-vertical: 1rem;
-    padding: var(--padding-vertical) 3rem;
-    margin-bottom: 8rem;
-    text-align: center;
+    padding: 1rem 2rem;
 }
 
 .block__header {
-    max-width: 600px;
-    margin: 2rem auto 4rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
 .block__header p {
-    opacity: 0.5;
+    opacity: 0.8;
 }
